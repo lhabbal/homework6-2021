@@ -39,6 +39,7 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 /*Requirement 5*/
@@ -85,21 +86,24 @@ header{
 /*Requirement 9*/
 #logo{
    /*Your code here.*/
-   animation: logo_grow 5s;
+   animation: logo_grow 15s;
+   animation-name: logo_grow;
+   animation-iteration-count: 1;
+
  
 }
 
 /*Keyframes for animation*/
 @-webkit-keyframes logo_grow{
-  0% { opacity: 0;}
-  100% { opacity: 1;}
+  0% { width: 25px; opacity: 0;}
+  100% { width: 420px; opacity: 1;}
 
 }
 
 @keyframes logo_grow{
   /*Your code here.*/
-  0% { width: 25px; }
-  100% {width: 420px;}
+  0% { width: 25px; opacity: 0;}
+  100% { width: 420px; opacity: 1;}
 
 } 
 
